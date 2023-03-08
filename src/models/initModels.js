@@ -4,8 +4,8 @@ const Categories = require('./categories.model');
 
 const initModels = () => {
   // Users - Todos
-  Users.hasMany(Todos, { foreignKey: 'todo_id' });
-  Todos.belongsTo(Users, { foreignKey: 'todo_id' });
+  Users.hasMany(Todos, { foreignKey: 'user_id' });
+  Todos.belongsTo(Users, { foreignKey: 'user_id' });
 
   // Todos - Categories
   Categories.hasMany(Todos, { foreignKey: 'category_id' });

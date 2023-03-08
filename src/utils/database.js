@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
 const db = new Sequelize({
-  database: 'forum_db',
+  database: 'todos_db',
   host: 'localhost',
   port: 5432,
   username: 'camunozn',
