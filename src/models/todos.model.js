@@ -20,7 +20,6 @@ const Todos = db.define(
     status: {
       type: DataTypes.ENUM('pending', 'complete'),
       defaultValue: 'pending',
-      allowNull: false,
     },
     userId: {
       type: DataTypes.INTEGER,
